@@ -1,9 +1,11 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:reto_madd_systems/counter/counter.dart';
 import 'package:reto_madd_systems/l10n/l10n.dart';
 
-class const CounterPage({super.key}) extends StatelessWidget {
+@RoutePage()
+class const CounterScreen({super.key}) extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
