@@ -30,8 +30,6 @@ El archivo queda en `build/app/outputs/flutter-apk/app-development-debug.apk`.
 
 ## Decisiones técnicas
 
-La app sigue la separación de Quantum:
-
 - `packages/madd_models` guarda peticiones, respuestas y el personaje de dominio con Freezed, más el contrato `ApiClient` y los errores.
 - `packages/madd_service` implementa ese contrato con Dio y traduce la API.
 - `packages/madd_repository` define `CharacterRepository` y lo implementa. `MaddRepositories` es el único lugar que construye Dio, el servicio y el repositorio. La interfaz solo ve el contrato.
