@@ -1,7 +1,52 @@
 {
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+  "@@locale": "en",
+  "appTitle": "Explorers",
+  "phoneTitle": "Identify your workspace",
+  "phoneBody": "Your phone number keeps your records apart from your teammates. This check is simulated: we do not send an SMS.",
+  "phoneLabel": "Phone number",
+  "phoneInvalid": "Enter a 10-digit phone number.",
+  "continueAction": "Continue",
+  "verifyTitle": "Access code",
+  "verifyBody": "Simulated verification. The code is the last 4 digits of your phone number.",
+  "codeLabel": "Code",
+  "codeInvalid": "That code does not match this phone number.",
+  "enterAction": "Enter",
+  "searchTitle": "Characters",
+  "savedTitle": "Saved",
+  "searchHint": "Search by name",
+  "searchAction": "Search",
+  "searchPrompt": "Type a character name to prepare the mission.",
+  "searchEmpty": "No characters match that name. Try another one.",
+  "searchFailure": "We could not reach the API. Check your connection and try again.",
+  "searchUnexpected": "The search failed. Try again in a moment.",
+  "savedEmpty": "You have not saved any characters yet. The ones you keep here stay available offline.",
+  "savedHint": "These records live on this device and belong only to this phone number.",
+  "saveAction": "Save for later",
+  "savedAction": "Saved",
+  "removeAction": "Remove",
+  "signOut": "Leave workspace",
+  "workspaceLabel": "Workspace {phone}",
+  "@workspaceLabel": {
+    "placeholders": {
+      "phone": {"type": "String"}
     }
+  },
+  "originLabel": "Origin",
+  "locationLabel": "Last location",
+  "speciesLabel": "Species",
+  "genderLabel": "Gender",
+  "statusAlive": "Alive",
+  "statusDead": "Dead",
+  "statusUnknown": "Unknown",
+  "genderMale": "Male",
+  "genderFemale": "Female",
+  "genderNone": "Genderless",
+  "episodeCount": "{count} episodes",
+  "@episodeCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "cacheNotice": "No connection. Showing the copy saved on this device.",
+  "loadMore": "Load more"
 }

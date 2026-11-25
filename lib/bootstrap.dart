@@ -1,10 +1,15 @@
 import 'dart:async';
 import 'dart:developer';
 
-import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
+import 'package:hydrated_bloc/hydrated_bloc.dart';
+import 'package:path_provider/path_provider.dart';
 
-class const AppBlocObserver() extends BlocObserver {
+/// Observa los cambios de los blocs durante el desarrollo.
+class AppBlocObserver extends BlocObserver {
+  /// Crea el observador.
+  const AppBlocObserver();
+
   @override
   void onChange(BlocBase<dynamic> bloc, Change<dynamic> change) {
     super.onChange(bloc, change);
@@ -18,14 +23,19 @@ class const AppBlocObserver() extends BlocObserver {
   }
 }
 
+/// Arranca Flutter y el almacén local de hydrated_bloc.
 Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
+  WidgetsFlutterBinding.ensureInitialized();
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
 
   Bloc.observer = const AppBlocObserver();
-
-  // Add cross-flavor configuration here
+  HydratedBloc.storage = await HydratedStorage.build(
+    storageDirectory: HydratedStorageDirectory(
+      (await getApplicationDocumentsDirectory()).path,
+    ),
+  );
 
   runApp(await builder());
 }

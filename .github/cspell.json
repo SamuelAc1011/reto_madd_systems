@@ -15,6 +15,7 @@
     }
   ],
   "useGitignore": true,
+  "ignorePaths": ["README.md", "PLAN_DE_TRABAJO.md"],
   "words": [
     "Contador",
     "localizable",

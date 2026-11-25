@@ -1,7 +1,52 @@
 {
-    "@@locale": "es",
-    "counterAppBarTitle": "Contador",
-    "@counterAppBarTitle": {
-        "description": "Texto mostrado en la AppBar de la página del contador"
+  "@@locale": "es",
+  "appTitle": "Exploradores",
+  "phoneTitle": "Identifica tu espacio",
+  "phoneBody": "El número celular separa tus registros de los de tus compañeros. La verificación es simulada: no enviamos un SMS.",
+  "phoneLabel": "Número celular",
+  "phoneInvalid": "Escribe un celular de 10 dígitos.",
+  "continueAction": "Continuar",
+  "verifyTitle": "Código de acceso",
+  "verifyBody": "Verificación simulada. El código son los últimos 4 dígitos de tu celular.",
+  "codeLabel": "Código",
+  "codeInvalid": "Ese código no corresponde a este celular.",
+  "enterAction": "Entrar",
+  "searchTitle": "Personajes",
+  "savedTitle": "Guardados",
+  "searchHint": "Busca por nombre",
+  "searchAction": "Buscar",
+  "searchPrompt": "Escribe el nombre de un personaje para preparar la misión.",
+  "searchEmpty": "No hay personajes con ese nombre. Prueba con otro.",
+  "searchFailure": "No pudimos consultar la API. Revisa tu conexión e inténtalo de nuevo.",
+  "searchUnexpected": "La búsqueda falló. Inténtalo de nuevo en un momento.",
+  "savedEmpty": "Aún no guardas personajes. Los que marques aquí siguen disponibles sin conexión.",
+  "savedHint": "Estos registros viven en este dispositivo y pertenecen solo a este celular.",
+  "saveAction": "Guardar para después",
+  "savedAction": "Guardado",
+  "removeAction": "Quitar",
+  "signOut": "Salir del espacio",
+  "workspaceLabel": "Espacio {phone}",
+  "@workspaceLabel": {
+    "placeholders": {
+      "phone": {"type": "String"}
     }
+  },
+  "originLabel": "Origen",
+  "locationLabel": "Última ubicación",
+  "speciesLabel": "Especie",
+  "genderLabel": "Género",
+  "statusAlive": "Vivo",
+  "statusDead": "Muerto",
+  "statusUnknown": "Desconocido",
+  "genderMale": "Hombre",
+  "genderFemale": "Mujer",
+  "genderNone": "Sin género",
+  "episodeCount": "{count} episodios",
+  "@episodeCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "cacheNotice": "Sin conexión. Mostramos la copia guardada en este dispositivo.",
+  "loadMore": "Cargar más"
 }
