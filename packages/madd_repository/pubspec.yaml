@@ -1,10 +1,17 @@
 name: madd_repository
-description: A Very Good Project created by Very Good CLI.
+description: Contratos de repositorio, sus implementaciones y el punto de inyección de dependencias.
 version: 0.1.0+1
 publish_to: none
 
 environment:
   sdk: ^3.13.0
+
+dependencies:
+  fpdart: ^1.2.0
+  madd_models:
+    path: ../madd_models
+  madd_service:
+    path: ../madd_service
 
 dev_dependencies:
   mocktail: ^1.0.5

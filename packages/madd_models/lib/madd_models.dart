@@ -1,4 +1,6 @@
-/// A Very Good Project created by Very Good CLI.
+/// Modelos de dominio, peticiones, respuestas y errores compartidos.
 library;
 
-export 'src/madd_models.dart';
+export 'src/character/character.dart';
+export 'src/core/core.dart';
+export 'src/session/session.dart';

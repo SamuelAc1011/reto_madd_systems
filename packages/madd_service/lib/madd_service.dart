@@ -1,4 +1,5 @@
-/// A Very Good Project created by Very Good CLI.
+/// Servicios HTTP de la aplicación.
 library;
 
-export 'src/madd_service.dart';
+export 'src/character/character_service.dart';
+export 'src/network/dio_api_client.dart';
